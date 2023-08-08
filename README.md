@@ -1,2 +1,2 @@
-# langdetector
-Detect the language given a natural language text
+# langtoolkit
+Tools for working with natural language
