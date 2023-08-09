@@ -1,7 +1,5 @@
-# import os
 import spacy
-
-# os.system('python -m spacy download en_core_web_sm')
+from langtoolkit.config import get_config
 
 MODELS = {'sm': {'en': 'en_core_web_sm',
                  'es': 'es_core_news_sm'},
@@ -13,12 +11,10 @@ MODELS = {'sm': {'en': 'en_core_web_sm',
 
 
 class Lemmatizer:
-    def __init__(self, model_size='sm'):
-        # Cargar los modelos de spaCy para inglés y español
-
-        self.lemm = {"en": spacy.load(MODELS[model_size]['en']),
-                     "es": spacy.load(MODELS[model_size]['es'])}
-
+    def __init__(self, model_size=None):
+        self.model_size = model_size if model_size else get_config()['spacy']['model_size']
+        self.lemm = {lang:spacy.load(MODELS[self.model_size][lang])  for lang in MODELS[self.model_size]}
+        
     def apply(self, lang, text):
         if not lang in self.lemm:
             return text
