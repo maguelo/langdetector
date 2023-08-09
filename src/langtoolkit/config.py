@@ -1,10 +1,14 @@
 import os
 import yaml
 
+
+import pkg_resources
+
 __BASE_PATH = os.getcwd()
 
 __CONFIG = None
-__CONFIG_FILE = os.path.join(__BASE_PATH, 'config.yaml')
+# __CONFIG_FILE = os.path.join(__BASE_PATH, 'config.yaml')
+__CONFIG_FILE = pkg_resources.resource_filename('langtoolkit', 'resources/config.yaml')
 
 
 def get_config(config_file=None):

@@ -11,7 +11,11 @@ setup(
         'tqdm',
         'nltk'
     ],
-    package_data={'langtoolkit': ['resources/*.*', 'scripts/*.py']},
+    include_package_data=True,
+    package_data={'langtoolkit': ['resources/*.pickle',
+                                  'resources/*.txt',
+                                  'resources/*.yaml',
+                                  'scripts/*.py']},
 
     # extras_require={
     #     "dev": [
