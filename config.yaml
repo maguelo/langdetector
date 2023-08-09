@@ -1,3 +1,8 @@
 lang:
   en: english.pickle
   es: spanish.pickle
+spacy:
+  model_size: sm
+
+detector:
+  threshold: 0.5
