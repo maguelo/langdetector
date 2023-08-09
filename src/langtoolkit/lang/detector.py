@@ -4,7 +4,7 @@ import pickle
 
 from langtoolkit.config import get_config, get_resources_path
 from langtoolkit.lang.lemmatizer import Lemmatizer
-from langtoolkit.lang.preprocess import Pipeline
+from langtoolkit.tools.preprocess import Pipeline
 
 DICTIONARY = None
 

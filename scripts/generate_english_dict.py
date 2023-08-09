@@ -1,6 +1,6 @@
 import argparse
 import pickle
-from langtoolkit.lang.preprocess import *
+from langtoolkit.tools.preprocess import *
 from langtoolkit.lang.loader import load_word_from_file
 import nltk
 nltk.download('words')

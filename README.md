@@ -33,7 +33,7 @@ Remember to modify the config file to specify the model size, default: large
 ## Example
 ```
 from langtoolkit.lang.detector import LanguageDetector
-from langtoolkit.lang.preprocess import *
+from langtoolkit.tools.preprocess import *
 
 pipeline = Pipeline()
 pipeline.register(lowercase)

@@ -1,5 +1,5 @@
 from langtoolkit.lang.detector import load_data, LanguageDetector
-from langtoolkit.lang.preprocess import *
+from langtoolkit.tools.preprocess import *
 if __name__ == "__main__":
     # print(ROOT_PATH)
 

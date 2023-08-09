@@ -1,5 +1,5 @@
 from tqdm import tqdm
-from langtoolkit.lang.preprocess import Pipeline
+from langtoolkit.tools.preprocess import Pipeline
 
 
 def load_word_from_file(corpus: str, preprocess: Pipeline = None)->list:
