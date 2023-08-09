@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="langtoolkit",  # Nombre del paquete/distribución
-    version="0.1",  # Versión del paquete
+    version="1.0",  # Versión del paquete
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
     install_requires=[
