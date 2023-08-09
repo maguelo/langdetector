@@ -3,8 +3,8 @@ import os
 import pickle
 
 from langtoolkit.config import get_config, get_resources_path
-from langtoolkit.lang.preprocess import Pipeline
 from langtoolkit.lang.lemmatizer import Lemmatizer
+from langtoolkit.lang.preprocess import Pipeline
 
 DICTIONARY = None
 
@@ -30,8 +30,8 @@ class LanguageDetector:
 
     def __init__(self, dictionary=None, preprocess=None, lemmatizer=None, threshold=None):
         self.dictionary = dictionary if dictionary else load_data()
-        self.preprocess = preprocess if preprocess else Pipeline()
         self.lemmatizer = lemmatizer if lemmatizer else Lemmatizer()
+        self.preprocess = preprocess if preprocess else Pipeline()        
         self.threshold = threshold if threshold else get_config()[
             'detector']['threshold']
 
