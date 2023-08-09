@@ -10,6 +10,8 @@ setup(
         "spacy==3.6",
         "en_core_web_lg==3.6",
         "es_core_news_lg==3.6",
+        'tqdm',
+        'nltk'
     ],
     # extras_require={
     #     "dev": [
