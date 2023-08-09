@@ -3,6 +3,5 @@ lang:
   es: spanish.pickle
 spacy:
   model_size: lg
-
 detector:
   threshold: 0.5

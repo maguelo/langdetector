@@ -2,7 +2,7 @@
 import os
 import pickle
 
-from langtoolkit.config import get_config,get_path
+from langtoolkit.config import get_config,get_resources_path
 from langtoolkit.lang.preprocess import Pipeline
 from langtoolkit.lang.lemmatizer import Lemmatizer
 
@@ -18,7 +18,7 @@ def load_data(config=None):
         DICTIONARY = {}
         for lang in config['lang']:
             lang_file = os.path.join(
-                get_path(), 'resources', config['lang'][lang])
+                get_resources_path(), config['lang'][lang])
             with open(lang_file, 'rb') as handle:
                 DICTIONARY[lang] = pickle.load(handle)
 

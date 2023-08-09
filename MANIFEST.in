@@ -1,0 +1,4 @@
+include src/langtoolkit/resources/*.yaml
+include src/langtoolkit/resources/*.pickle
+include src/langtoolkit/resources/*.txt
+
