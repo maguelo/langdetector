@@ -7,10 +7,12 @@ setup(
     package_dir={'': 'src'},
     install_requires=[
         "unidecode",
-        "spacy==3.6",
+        "spacy",
         'tqdm',
         'nltk'
     ],
+    package_data={'langtoolkit': ['resources/*.*', 'scripts/*.py']},
+
     # extras_require={
     #     "dev": [
     #         "unittest",
