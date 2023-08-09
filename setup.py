@@ -8,8 +8,6 @@ setup(
     install_requires=[
         "unidecode",
         "spacy==3.6",
-        "en_core_web_lg==3.6",
-        "es_core_news_lg==3.6",
         'tqdm',
         'nltk'
     ],
